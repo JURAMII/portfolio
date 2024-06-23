@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.sec1{
+    padding: 50px 0;
+    border: 1px solid saddlebrown;
+}
+.sec1 h2{
+    padding: 5px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+}
+.sec1 h2 span{
+    font-size: 150px;
+}
+.last_name{
+    font-family: "Quantico", sans-serif;
+    position: absolute;
+    top: 30%; left: 5%;
+    font-size: 400px;
+    display: none;
+}
