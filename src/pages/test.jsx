@@ -11,10 +11,9 @@ const Test = () => {
       className="box"
       initial={{ opacity: 0, scale: 0.1 }}
       whileInView={{opacity: 1, scale: 3.5 }}
-      // animate={{ opacity: 1, scale: 1.5 }}
       transition={{
-      duration: 2,
-      delay: 1.5,
+      duration: 1,
+      delay: 2.5,
       ease:"easeInOut"
       }}
     />

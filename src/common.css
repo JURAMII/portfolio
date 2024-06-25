@@ -7,7 +7,6 @@
     /* background-color: var(--bg); */
     color: var(--basic-black);
 }
-
 .flex{
     display: flex;
 }

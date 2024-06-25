@@ -6,14 +6,17 @@
     padding: 50px 0;
     border: 1px solid saddlebrown;
     position: relative;
+    background-color: var(--basic-black);
 }
 .sec1 h2{
     font-family: "Quantico", sans-serif;
+    color: var(--bg);
     font-weight: 700;
     font-size: 100px;
     line-height: 150px;
 }
 .sec1 h2 span{
+    color: var(--bg);
     font-size: 150px;
 }
 .name_wrap{
@@ -26,8 +29,8 @@
     letter-spacing: -58px;
 }
 .last_name{
+    color: var(--basic-black);
     text-align: center;
-    /* -webkit-text-stroke: 1px var(--bg); */
 }
 .boxWrap{
     justify-content: center;
@@ -38,6 +41,6 @@
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: var(--bg);
+    background-color: var(--bg);
     z-index: 1;
   }
