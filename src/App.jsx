@@ -1,13 +1,17 @@
-import Sec1 from "./pages/sec1";
-import Test from "./pages/test";
+import Header from "./components/header";
+import Intro from "./pages/intro";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
 function App() {
  
 
   return (
     <>
-    {/* <Test/> */}
-    <Sec1/>
+    <Header/>
+    <Intro/>
+    <About/>
+    <Contact/>
     </>
   )
 }

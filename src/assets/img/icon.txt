@@ -1,0 +1,9 @@
+<a href="https://www.flaticon.com/kr/free-icons/html" title="html 아이콘">Html 아이콘 제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/css" title="css 아이콘">Css 아이콘 제작자: Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/-" title="자바 스크립트 아이콘">자바 스크립트 아이콘 제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/mysql" title="mysql 아이콘">Mysql 아이콘 제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/jquery" title="jquery 아이콘">Jquery 아이콘 제작자: agustrisana - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/nodejs" title="nodejs 아이콘">Nodejs 아이콘 제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/github" title="github 아이콘">Github 아이콘 제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/-" title="그래픽 디자인 아이콘">그래픽 디자인 아이콘 제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/-" title="그래픽 디자인 아이콘">그래픽 디자인 아이콘 제작자: Freepik - Flaticon</a>

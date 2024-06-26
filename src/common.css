@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 :root{
     --basic-black : #1A1A1A;
     --bg : #F4F3ED;
 }
 
 *{  
-    /* background-color: var(--bg); */
     color: var(--basic-black);
+    font-family: "Noto Sans KR", sans-serif;
+}
+body{
+    background-color: var(--bg);
 }
 .flex{
     display: flex;
@@ -13,6 +18,13 @@
 
 .basic_section{
     width: 1440px;
-    height: 100vh;
+    margin: 0 auto;
     overflow: hidden;
+}
+
+/* 반응형 */
+@media screen and (max-width : 1440px) {
+	.basic_section {
+		width: calc(100% - 20px);
+	}
 }

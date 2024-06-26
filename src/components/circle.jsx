@@ -1,16 +1,16 @@
-import './style.css';
+import './compoStyle.css';
 import { motion } from "framer-motion";
 
 
-const Test = () => {
+const Circle = () => {
 
 
     return(
-      <div className='boxWrap flex'>
+      <div className='circle_wrap flex'>
       <motion.div
-      className="box"
+      className="circle"
       initial={{ opacity: 0, scale: 0.1 }}
-      whileInView={{opacity: 1, scale: 3.5 }}
+      whileInView={{opacity: 1, scale: 4.5 }}
       transition={{
       duration: 1,
       delay: 2.5,
@@ -22,4 +22,4 @@ const Test = () => {
     )
 }
 
-export default Test
+export default Circle
