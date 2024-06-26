@@ -1,9 +1,15 @@
 import './pageStyle.css';
+import { useEffect } from 'react';
 import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma } from '../assets/img/images';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      },[])
 
     return (
         <section className="sec2" data-aos="fade-down" data-aos-easing="ease-in-out">
@@ -24,29 +30,29 @@ const About = () => {
                                 <div className='fe'>
                                 <p className='sp'>FrontEnd</p>
                                 <ul className='fe flex'>
-                                    <li><img src={HTML} alt="html" /></li>
-                                    <li><img src={CSS} alt="css" /></li>
-                                    <li><img src={JS} alt="js" /></li>
-                                    <li><img src={Jquery} alt="jquery" /></li>
-                                    <li><img src={React} alt="react" /></li>
-                                    <li><img src={Three} alt="three" /></li>
-                                    <li><img src={Node} alt="node" /></li>
-                                    <li><img src={Mysql} alt="mysql" /></li>
+                                    <li><img src={HTML} alt="html" title='html5'/></li>
+                                    <li><img src={CSS} alt="css" title='css3'/></li>
+                                    <li><img src={JS} alt="js" title='java script'/></li>
+                                    <li><img src={Jquery} alt="jquery" title='jQuery'/></li>
+                                    <li><img src={React} alt="react" title='react'/></li>
+                                    <li><img src={Three} alt="three" title='Three.js'/></li>
+                                    <li><img src={Node} alt="node" title='node.js'/></li>
+                                    <li><img src={Mysql} alt="mysql" title='mysql'/></li>
                                 </ul>
                                 </div>
                                 <div>
                                     <p className='sp'>Design</p>
                                     <ul className='fe flex'>
-                                        <li><img src={Ps} alt="ps" /></li>
-                                        <li><img src={Ai} alt="ai" /></li>
-                                        <li><img src={Figma} alt="figma" /></li>
+                                        <li><img src={Ps} alt="ps" title='Photoshop'/></li>
+                                        <li><img src={Ai} alt="ai" title='Illustrator'/></li>
+                                        <li><img src={Figma} alt="figma" title='figma'/></li>
                                     </ul>
                                 </div>
                                 <div>
                                     <p className='sp'>Cooperation</p>
                                     <ul className='fe flex'>
-                                        <li><img src={GithubB} alt="github" /></li>
-                                        <li><img src={Notion} alt="notion" /></li>
+                                        <li><img src={GithubB} alt="github" title='github'/></li>
+                                        <li><img src={Notion} alt="notion" title='notion'/></li>
                                     </ul>
                                 </div>
                             </div>

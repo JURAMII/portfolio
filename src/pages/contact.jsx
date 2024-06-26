@@ -13,20 +13,24 @@ const Contact = () => {
       },[])
 
     return(
-        <section data-aos="fade-down" data-aos-easing="ease-in-out" className="sec10">
-            {/* <div className="basic_section contacts">
-            <p>CONTACT</p>
-            <ul className="flex">
-                <li><a href="">정단비</a></li>
-                <li><a href="">+82 10 8533 1068</a></li>
-                <li><a href="">4679jeong@naver.com</a></li>
-                <li><a href="https://github.com/JURAMII" target="_blank"><span><img src={GithubW} alt="github" /></span>https://github.com/JURAMII</a></li>
-            </ul>
-            <h6 className="flex">Copyright 2024. Danbi. all right reserved</h6>
-            </div> */}
-            <div className="basic_section contacts">
-                <h3>LET'S WORK</h3>
-                <h3>TOGETHER</h3>
+        <section className="sec10">
+            <div className="basic_section contact_wrap">
+                <div className='lets'>
+                <h3 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="200">LET'S WORK</h3>
+                <h3 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="400">TOGETHER</h3>
+                </div>
+                <div className='cantact flex'>
+                    <div>
+                    <p>CONTACT ME!</p>
+                    <ul>
+                        <li>정단비</li>
+                        <li>010-8533-1068</li>
+                        <li>4679jeong@naver.com</li>
+                        <li><a href="https://github.com/JURAMII" target="_blank"><img src={GithubW} alt="github" /></a></li>
+                    </ul>
+                    </div>
+                </div>
+                <h6>Copyright 2024. DANBI. all right reserved</h6>
             </div>
         </section>
     )
