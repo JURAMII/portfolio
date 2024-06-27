@@ -1,11 +1,12 @@
 import './compoStyle.css'
 
-const Btn = () => {
+
+const Btn = ({git, site,color}) => {
 
     return(
         <div className="btn_wrap flex">
-        <div><a href={git}>Github</a></div>
-        <div><a href={site}>Site</a></div>
+        <div style={{border:`2px solid ${color}`}}><a href={git} target='_blank' style={{color:color}}>Github</a></div>
+        <div style={{border:`2px solid ${color}`}}><a href={site} target='_blank' style={{color:color}}>Site</a></div>
         </div>
     )
 }

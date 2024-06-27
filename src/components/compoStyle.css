@@ -94,17 +94,63 @@ nav li {
 
 /* button 버튼 */
 .btn_wrap{
+  justify-content: center;
   gap: 28px;
 }
 .btn_wrap div{
   width: 100px;
   line-height: 40px;
   text-align: center;
-  border: 1px solid var(--basic-black);
+  font-weight: bold;
 }
-
 /* clone */
 .cloneCom_wrap{
   width: 100%;
   height: 100%;
+}
+.cloneCom{
+  position: relative;
+  z-index: 1;
+  width: 100%; height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cloneCom::after{
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+  opacity: 0.8;
+}
+.cloneCom:hover::after{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.clone_font_wrap{
+  position: absolute;
+  top: 30%; left: 25%;
+}
+.clone_font_wrap p{
+  color: #fff;
+}
+.clone_font_wrap p:first-child{
+  padding: 30px;
+}
+.clone_font_wrap p:first-child::after{
+  width: 50px; height: 3px;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 89px;
+}
+.clone_font_wrap p:nth-child(2){
+  padding: 20px 0;
+}
+.clone_font_wrap p:nth-child(3){
+  padding-bottom: 50px;
 }
