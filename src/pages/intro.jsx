@@ -9,8 +9,7 @@ const Intro = () => {
     const nameRef = useRef();
 
     useEffect(() => {
-        AOS.init();
-        // AOS.refresh();
+        AOS.init({once: true});
       },[])
 
       setTimeout(() => {

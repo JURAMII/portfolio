@@ -29,6 +29,41 @@ nav ul {
 nav li {
     font-size: 18px;
 }
+/*모바일 nav*/
+.ham{
+    height: 12px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.ham span{
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--basic-black);
+  transition-duration: 0.4s;
+}
+.ham span:last-child{
+  margin-top: 10px;
+}
+.set.ham span:first-child{
+  position: relative;
+  top: 50%; left: 0; transform: rotate(45deg);
+  transition-duration: 0.4s
+}
+.set.ham span:last-child{
+  position: relative;
+  top: -50%; left: 0; transform: rotate(-45deg);
+  transition-duration: 0.4s
+}
+.ham_menu{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 5;
+  background-color: var(--bg);
+}
 
 /* circle */
 .circle_wrap {
@@ -55,4 +90,21 @@ nav li {
 @keyframes marquee {
     0%{ transform: 0; }
     100%{ transform: translateX(-100%);}
+}
+
+/* button 버튼 */
+.btn_wrap{
+  gap: 28px;
+}
+.btn_wrap div{
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid var(--basic-black);
+}
+
+/* clone */
+.cloneCom_wrap{
+  width: 100%;
+  height: 100%;
 }

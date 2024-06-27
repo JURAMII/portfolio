@@ -2,16 +2,18 @@ import Header from "./components/header";
 import Intro from "./pages/intro";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import WebClone from "./pages/web_clone";
 
 function App() {
  
 
   return (
     <>
-    <Header/>
+    {/* <Header/>
     <Intro/>
     <About/>
-    <Contact/>
+    <Contact/> */}
+    <WebClone/>
     </>
   )
 }

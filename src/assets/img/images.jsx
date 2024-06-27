@@ -11,7 +11,12 @@ import React from './React.png';
 import Three from './Three.png';
 import Ps from './photo.png';
 import Ai from './ill.png';
-import Figma from './Figma.png'
+import Figma from './Figma.png';
+import Domino from './domino.png';
+import Bizcar from './bizcar.png';
+import Gongju from './gongju.png';
+import Kt from './kt.png';
+import Socar from './socar.png';
 
-export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma
+export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar
  }

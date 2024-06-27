@@ -22,6 +22,19 @@ body{
     overflow: hidden;
 }
 
+.tit_font{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.sub_font{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cont_font{
+    font-size: 18px;
+}
+
 /* 반응형 */
 @media screen and (max-width : 1440px) {
 	.basic_section {

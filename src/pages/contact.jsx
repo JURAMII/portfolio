@@ -8,8 +8,8 @@ import "aos/dist/aos.css";
 const Contact = () => {
     
     useEffect(() => {
-        AOS.init();
-        // AOS.refresh();
+        AOS.init({once: false});
+        AOS.refresh();
       },[])
 
     return(
