@@ -5,7 +5,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 
-const Contact = () => {
+export default function Contact () {
     
     useEffect(() => {
         AOS.init({once: false});
@@ -35,5 +35,3 @@ const Contact = () => {
         </section>
     )
 }
-
-export default Contact

@@ -3,6 +3,7 @@ import Intro from "./pages/intro";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import WebClone from "./pages/web_clone";
+import Project from "./pages/project";
 
 function App() {
  
@@ -12,8 +13,10 @@ function App() {
     {/* <Header/>
     <Intro/>
     <About/>
-    <Contact/> */}
+    <Contact/> 
     <WebClone/>
+    */}
+    <Project/>
     </>
   )
 }

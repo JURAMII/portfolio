@@ -4,7 +4,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import Circle from '../components/circle';
 
-const Intro = () => {
+export default function Intro () {
     
     const nameRef = useRef();
 
@@ -40,5 +40,3 @@ const Intro = () => {
         
     )
 }
-
-export default Intro

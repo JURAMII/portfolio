@@ -5,7 +5,7 @@ import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, 
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-const About = () => {
+export default function About () {
 
     useEffect(() => {
         AOS.init({once: false});
@@ -78,5 +78,3 @@ const About = () => {
         </section>
     )
 }
-
-export default About

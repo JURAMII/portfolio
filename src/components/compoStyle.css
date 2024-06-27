@@ -131,11 +131,11 @@ nav li {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .clone_font_wrap{
-  position: absolute;
-  top: 30%; left: 25%;
+ padding-top: 250px;
 }
 .clone_font_wrap p{
   color: #fff;
+  position: relative;
 }
 .clone_font_wrap p:first-child{
   padding: 30px;
@@ -145,8 +145,8 @@ nav li {
   background-color: #fff;
   content: "";
   position: absolute;
-  top: 30%;
-  left: 89px;
+  top: 75px;
+  left: 45%;
 }
 .clone_font_wrap p:nth-child(2){
   padding: 20px 0;
