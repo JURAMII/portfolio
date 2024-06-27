@@ -1,4 +1,5 @@
 import './pageStyle.css';
+import Letter from '../components/letter';
 import { useEffect } from 'react';
 import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma } from '../assets/img/images';
 import AOS from 'aos';
@@ -73,6 +74,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Letter/>
         </section>
     )
 }

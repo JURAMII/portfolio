@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* header */
 header {
-    border-bottom: 2px solid var(--basic-black);
-    /* background-color: var(--bg); */
+    border-bottom: 2px solid rgba(26, 26, 26, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(3px);
     position: sticky;
@@ -45,50 +46,13 @@ nav li {
 }
 
 /* flow letter */
-/* .letter_wrap {
-    width: 100%;
-    overflow: hidden;
-}
-
-.letter {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 20px;
-    white-space: nowrap;
-}
-
-.letter span{
-    height: 100%;
-    animation: marquee 3000ms linear infinite;
-    will-change: transform;
-    font-size: 100px;
-    font-weight: bold;
-}
+.letter{ width: 100%; position: relative; overflow: hidden;}
+.marquee{ width: 100%; text-align: center; display: flex; }
+.marquee .play{ display: flex; justify-content: space-around; animation: marquee 30s linear infinite; min-width: 170%; flex-shrink: 0; font-size: 10vw; font-weight: 300;}
+.marquee .play h1 { font-family: "Roboto", sans-serif; }
+.marquee .play h2{ font-weight: 700; color: var(--bg); -webkit-text-stroke: 1px var(--basic-black); font-family: "Roboto", sans-serif;}
 
 @keyframes marquee {
-    from {transform: translateX(0);}
-    to {transform: translateX(-100%);}
-  } */
-   
-  @keyframes scroll-animation{
-    0%{
-      left: 0;
-    }
-    100%{
-      left: -400px; /* 텍스트 width와 동일 */
-    }
-  }
-  .scroll-text{
-    width: 100%;
-    overflow: hidden;
-  }
-  .track{
-    position: relative;
-    width: 2800px;
-    animation: scroll-animation 5s linear infinite;
-  }
-  .track p{
-    float: left;
-    width: 400px;
-    font-size: 36px;
-  }
+    0%{ transform: 0; }
+    100%{ transform: translateX(-100%);}
+}
