@@ -1,7 +1,7 @@
 import './compoStyle.css'
 import Btn from './btn'
 
-const CloneCom = ({title, skill, date, backimg, git, site, color}) => {
+const CloneCom = ({title, skill, date, backimg, git, site, color, Cclass}) => {
 
     return(
         <div className='cloneCom_wrap'>
@@ -10,7 +10,7 @@ const CloneCom = ({title, skill, date, backimg, git, site, color}) => {
             <p className='sub_font'>{title}</p>
             <p className='cont_font'>{date}</p>
             <p className='cont_font'>{skill}</p>
-            <Btn git={git} site={site} color={color}/>
+            <Btn git={git} site={site} color={color} Cclass={Cclass}/>
             </div>
             </div>
         </div>

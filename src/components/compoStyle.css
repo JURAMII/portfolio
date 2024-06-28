@@ -94,15 +94,78 @@ nav li {
 
 /* button 버튼 */
 .btn_wrap{
-  justify-content: center;
   gap: 28px;
 }
-.btn_wrap div{
+.btn_wrap a{
   width: 100px;
   line-height: 40px;
   text-align: center;
   font-weight: bold;
 }
+.cloneBtn{
+  justify-content: center;
+}
+
+/* project */
+.proCom_wrap{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 1px solid darkblue; */
+}
+.proCom_wrap h2{
+  padding: 100px 0;
+}
+.proCom{
+  padding-top: 50px;
+  justify-content: center;
+}
+.proImg{
+  width: 500px;
+  height: 422px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.proImg img{
+  width: 100%;
+  height: 100%;
+}
+.cont_wrap{
+  width: 500px;
+  height: 422px;
+  padding-left: 100px;
+}
+.cont_wrap h3{
+  padding-bottom: 20px;
+}
+.cont_wrap p:not(p:nth-child(5)){
+  padding-bottom: 10px;
+}
+.cont_wrap p:nth-child(5){
+  width: 100%;
+  height: 54%;
+  line-height: 1.5;
+}
+.cont_wrap p:nth-child(5)::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--basic-black);
+  margin: 10px 0 20px;
+}
+
+
+/* skills*/
+.skillBtn_wrap li{
+  width: 85px;
+  line-height: 35px;
+  background-color: var(--basic-black);
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
 /* clone */
 .cloneCom_wrap{
   width: 100%;
@@ -153,4 +216,61 @@ nav li {
 }
 .clone_font_wrap p:nth-child(3){
   padding-bottom: 50px;
+}
+
+
+/* 반응형 */
+@media screen and (max-width : 768px) {
+
+  .proCom_wrap h2{
+    padding: 50px 0;
+  }
+	.proCom {
+    padding: 0;
+		flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+  .proImg{
+    width: 300px;
+    height: 222px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  .cont_wrap{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .cont_wrap h3{
+    text-align: center;
+  }
+  .cont_wrap p:not(p:nth-child(5)){
+    text-align: center;
+  }
+  .cont_wrap p:nth-child(5){
+    height: auto;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .ProBtn{
+    justify-content: center;
+  }
+  .skillBtn_wrap{
+    justify-content: center;
+  }
+  .skillBtn_wrap li{
+    font-size: 14px;
+    width: 70px;
+    line-height: 30px;
+  }
+  .clone_font_wrap p:first-child::after{
+    left: 46%;
+  }
+}
+@media screen and (max-width : 500px){
+  .clone_font_wrap p:first-child::after{
+    left: 43%;
+  }
 }

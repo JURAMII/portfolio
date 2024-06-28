@@ -14,13 +14,12 @@ export default function Contact () {
 
     return(
         <section className="sec10">
-            <div className="basic_section contact_wrap">
+            <div className="contact_wrap">
                 <div className='lets'>
                 <h3 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="200">LET'S WORK</h3>
                 <h3 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="400">TOGETHER</h3>
                 </div>
-                <div className='cantact flex'>
-                    <div>
+                <div className='cantact'>
                     <p>CONTACT ME!</p>
                     <ul>
                         <li>정단비</li>
@@ -28,7 +27,6 @@ export default function Contact () {
                         <li>4679jeong@naver.com</li>
                         <li><a href="https://github.com/JURAMII" target="_blank"><img src={GithubW} alt="github" /></a></li>
                     </ul>
-                    </div>
                 </div>
                 <h6>Copyright 2024. DANBI. all right reserved</h6>
             </div>

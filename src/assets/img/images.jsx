@@ -17,6 +17,11 @@ import Bizcar from './bizcar.png';
 import Gongju from './gongju.png';
 import Kt from './kt.png';
 import Socar from './socar.png';
+import Night from './night.png';
+import Port from './port.png';
+import Dict from './dict.png';
+import Gicova from './gicova.png';
+import Me from './me.png'
 
-export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar
+export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me
  }

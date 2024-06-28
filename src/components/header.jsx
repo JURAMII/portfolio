@@ -46,7 +46,7 @@ const Ham = () => {
 
 const Header = () => {
 
-    let navs = ['About', 'Projects', 'Web-clone', 'Toy', 'Contact']
+    let navs = ['About', 'Projects', 'Toy', 'Web-clone', 'Contact']
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 

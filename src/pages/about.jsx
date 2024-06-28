@@ -1,7 +1,7 @@
 import './pageStyle.css';
 import Letter from '../components/letter';
 import { useEffect } from 'react';
-import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma } from '../assets/img/images';
+import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Me } from '../assets/img/images';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -17,7 +17,7 @@ export default function About () {
             <div className="basic_section about">
                 <h2 className='tit_font'>About</h2>
                 <div className="about_wrap flex">
-                    <div className="me"></div>
+                    <div className="my"><img src={Me} alt="me" /></div>
                     <div>
                         <ul className="intro">
                             <li><span className='sub_font'>Name</span>정단비</li>

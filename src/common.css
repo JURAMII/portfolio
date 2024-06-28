@@ -41,3 +41,17 @@ body{
 		width: calc(100% - 20px);
 	}
 }
+@media screen and (max-width : 768px) {
+	.basic_section {
+		width: calc(100% - 20px);
+	}
+    .tit_font{
+        font-size: 24px;
+    }
+    .sub_font{
+        font-size: 18px;
+    }
+    .cont_font{
+        font-size: 16px;
+    }
+}

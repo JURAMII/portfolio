@@ -1,12 +1,23 @@
 import "./pageStyle.css";
 import CloneCom from "../components/cloneCom";
+import { useEffect } from "react";
 import { Domino, Bizcar, Gongju, Kt, Socar } from "../assets/img/images";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
+import 'swiper/css/pagination';
+
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default function WebClone() {
+
+  useEffect(() => {
+    AOS.init({once: false});
+    AOS.refresh();
+  },[])
+
   const clones = [
     {
         title: "쏘카",
@@ -17,6 +28,7 @@ export default function WebClone() {
         git: "https://github.com/JURAMII/socar",
         site: "https://juramii.github.io/socar/",
         color: "#fff",
+        Cclass:"cloneBtn"
       },
       {
         title: "국립공주박물관",
@@ -27,6 +39,7 @@ export default function WebClone() {
         git: "https://github.com/JURAMII/socar",
         site: "https://juramii.github.io/socar/",
         color: "#fff",
+        Cclass:"cloneBtn"
       },
       {
         title: "KT&G 장학재단",
@@ -37,6 +50,7 @@ export default function WebClone() {
         git: "https://github.com/JURAMII/KT-G",
         site: "https://juramii.github.io/KT-G/",
         color: "#fff",
+        Cclass:"cloneBtn"
       },
       {
         title: "비즈카",
@@ -47,6 +61,7 @@ export default function WebClone() {
         git: "https://github.com/JURAMII/bizcar",
         site: "https://juramii.github.io/bizcar/",
         color: "#fff",
+        Cclass:"cloneBtn"
       },
     
     {
@@ -58,22 +73,26 @@ export default function WebClone() {
       git: "https://github.com/JURAMII/Dominos",
       site: "https://juramii.github.io/Dominos/",
       color: "#fff",
+      Cclass:"cloneBtn"
     },
   ];
 
   return (
-    <section className="clone_wrap">
+    <section className="clone_wrap" data-aos="fade-down" data-aos-easing="ease-in-out">
       <div className="basic_section">
         <h2 className="tit_font">Web-clone</h2>
         <Swiper
           watchSlidesProgress={true}
           slidesPerView={1}
           loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
+          pagination={{
+            type: 'progressbar',
           }}
-          modules={[Autoplay]}
+          modules={[Autoplay, Pagination]}
           breakpoints={{
              
             768:{

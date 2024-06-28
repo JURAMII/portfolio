@@ -16,7 +16,9 @@ function App() {
     <Contact/> 
     <WebClone/>
     */}
-    <Project/>
+    <Header/>
+    <WebClone/>
+    <Contact/> 
     </>
   )
 }
