@@ -79,24 +79,26 @@ export default function WebClone() {
 
   return (
     <section className="clone_wrap" data-aos="fade-down" data-aos-easing="ease-in-out">
-      <div className="basic_section">
+      <div>
         <h2 className="tit_font">Web-clone</h2>
         <Swiper
           watchSlidesProgress={true}
           slidesPerView={1}
           loop={true}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           pagination={{
             type: 'progressbar',
           }}
           modules={[Autoplay, Pagination]}
-          breakpoints={{
-             
+
+          breakpoints={{   
             768:{
-          slidesPerView:3           
+          slidesPerView:3,
+          autoplay:false,     
           },
           
           }}

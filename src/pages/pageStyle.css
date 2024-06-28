@@ -44,12 +44,10 @@
 /* about */
 .sec2 {
     background-color: var(--bg);
-    margin: 0 auto;
-    height: calc(100% - 10vw)
 }
 
 .about h2 {
-    padding: 100px 0 60px;
+    padding: 50px 0;
 }
 
 .about_wrap {
@@ -85,6 +83,7 @@
 .skill img {
     width: 40px;
     height: 40px;
+    margin-bottom: 5px;
 }
 
 .fe {
@@ -103,7 +102,7 @@
 
 .edu {
     padding-top: 20px;
-    justify-content: space-between;
+    gap: 10%;
 }
 
 .edu ul {
@@ -116,10 +115,11 @@
 
 .edu ul li {
     height: 36px;
+    line-height: 1;
 }
 
 .edu ul li:last-child {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 /* project */
@@ -158,7 +158,7 @@
 }
 
 .clone_wrap .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: red;
+    background: Gold;
 }
 
 /* contacts */
@@ -168,6 +168,7 @@
     height: 847px;
     overflow: hidden;
 }
+
 .lets {
     padding-top: 100px;
 }
@@ -179,8 +180,7 @@
 }
 
 .cantact {
-    padding-top: 100px;
-    padding-right: 20px;
+    padding-top: 85px;
     text-align: end;
 }
 
@@ -211,37 +211,147 @@
     font-size: 12px;
     font-weight: lighter;
     letter-spacing: 5px;
+    padding: 10px 0;
 }
+
 /* 반응형 */
-@media screen and (max-width : 1065px){
+@media screen and (max-width : 1065px) {
+    .intro {
+        width: 100%;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .skill ul {
+        width: 100%;
+    }
+
+    .edu {
+        width: 100%;
+        gap: 5%;
+    }
+
+    .edu ul {
+        height: auto;
+    }
+
     .sec10 {
         height: auto;
     }
+
+    .lets {
+        padding-top: 50px;
+    }
+
     .lets h3 {
         font-size: 100px;
     }
+
     .cantact {
-        padding-top: 100px;
-        padding-right: 0px;
+        padding-top: 70px;
     }
+
     .cantact p {
         font-size: 45px;
-        text-align: end;
     }
-    
+
     .cantact li {
         font-size: 30px;
-    
     }
-    
+
     .cantact img {
         width: 50px;
         height: 50px;
     }
-    
+
 }
+
 @media screen and (max-width : 768px) {
-	.clone_wrap {
+    .about_wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my {
+        width: 200px;
+        height: 200px;
+    }
+
+    .my img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .intro li {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .edu_wrap {
+        padding-top: 20px;
+    }
+
+    .edu ul {
+        font-size: 16px;
+    }
+
+    .clone_wrap {
         height: 847px;
     }
+
+    .lets h3 {
+        font-size: 50px;
+    }
+
+    .cantact p {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .cantact li {
+        font-size: 20px;
+    }
+
+    .cantact img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact_wrap h6 {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .intro{
+        padding-top: 20px;
+    }
+    .skill {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill ul {
+        width: 200px;
+    }
+
+    .edu {
+        flex-direction: column;
+    }
+
+    .edu ul li {
+        height: auto;
+    }
+
+    .edu ul li:last-child {
+        padding-top: 10px;
+    }
+    .edu ul:last-child li:first-child{
+        padding-top: 25px;
+    }
+    
 }

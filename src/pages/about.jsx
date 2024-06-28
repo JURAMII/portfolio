@@ -28,7 +28,7 @@ export default function About () {
                         <div className='skill_wrap'>
                             <h4 className='sub_font'>Skills & Tools</h4>
                             <div className='skill flex'>
-                                <div className='fe'>
+                                <div>
                                 <p className='cont_font sp'>FrontEnd</p>
                                 <ul className='fe flex'>
                                     <li><img src={HTML} alt="html" title='html5'/></li>
@@ -60,7 +60,7 @@ export default function About () {
                         </div>
                         <div className='edu_wrap'>
                             <h4 className='sub_font'>Education</h4>
-                            <div className="flex edu">
+                            <div className="edu flex">
                                 <ul>
                                     <li>WebGL(3D API)을 활용한 Motion UI 프론트엔드 웹앱개발자 양성과정</li>
                                     <li>2024. 01 ~ 08</li>
