@@ -4,6 +4,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import WebClone from "./pages/web_clone";
 import Project from "./pages/project";
+import Toy from "./pages/toy";
 
 function App() {
  
@@ -17,7 +18,7 @@ function App() {
     <WebClone/>
     */}
     <Header/>
-    <About/>
+    <Toy/>
     </>
   )
 }

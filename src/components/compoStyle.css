@@ -154,8 +154,36 @@ nav li {
   margin: 10px 0 20px;
 }
 
+/* toy */
+figure img{
+  width: 479px;
+  height: 262px;
+}
+.TSkill{
+  justify-content: center;
+}
+.ToyCome_cont{
+  width: 479px;
+  height: 262px;
+  text-align: center;
+  border: 1px solid rebeccapurple;
+}
+.ToyCome_cont figcaption{
+  padding: 20px 0 0;
+}
+.ToyCome_cont p{
+  white-space: pre-wrap;
+  line-height: 1.2;
+  padding: 20px 0;
+}
+.toy_txt{
+  height: 72px;
+}
+.toyBtn{
+  justify-content: center;
+}
 
-/* skills*/
+/* skills button*/
 .skillBtn_wrap li{
   width: 85px;
   line-height: 35px;
@@ -220,6 +248,10 @@ nav li {
 
 
 /* 반응형 */
+@media screen and (max-width : 1065px) {
+
+}
+
 @media screen and (max-width : 768px) {
 
   .proCom_wrap h2{
@@ -257,7 +289,7 @@ nav li {
   .ProBtn{
     justify-content: center;
   }
-  .skillBtn_wrap{
+  .PSkill{
     justify-content: center;
   }
   .skillBtn_wrap li{

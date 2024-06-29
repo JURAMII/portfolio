@@ -2,7 +2,7 @@ import './compoStyle.css'
 import Skills from "./skills"
 import Btn from './btn'
 
-const ProCom = ({title, skill, date, img, people, git, site, color, txt, Cclass}) =>{
+const ProCom = ({title, skill, date, img, people, git, site, color, txt, Cclass, Sclass}) =>{
 
     return(
         <div className="proCom_wrap">
@@ -13,7 +13,7 @@ const ProCom = ({title, skill, date, img, people, git, site, color, txt, Cclass}
                 <h3 className="sub_font">{title}</h3>
                 <p className="cont_font">{people}</p>
                 <p className="cont_font">{date}</p>
-                <Skills skills={skill}/>
+                <Skills skills={skill} Sclass={Sclass}/>
                 <p>{txt}</p>
                 <Btn git={git} site={site} color={color} Cclass={Cclass}/>
             </div>

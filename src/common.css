@@ -19,7 +19,7 @@ body{
 .basic_section{
     width: 1440px;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .tit_font{
@@ -42,9 +42,6 @@ body{
 	}
 }
 @media screen and (max-width : 768px) {
-	.basic_section {
-		width: calc(100% - 20px);
-	}
     .tit_font{
         font-size: 24px;
     }

@@ -20,7 +20,8 @@ export default function Project() {
             git: "https://github.com/JURAMII/Team_Period",
             site: "https://juramii.github.io/Team_Period/",
             color: "#1a1a1a",
-            Cclass: "ProBtn"
+            Cclass: "ProBtn",
+            Sclass:"PSkill"
           },
         {
             title: "포트폴리오",
@@ -33,7 +34,8 @@ export default function Project() {
             git: "https://github.com/JURAMII/portfolio",
             site: "https://juramii.github.io/portfolio/",
             color: "#1a1a1a",
-            Cclass: "ProBtn"
+            Cclass: "ProBtn",
+            Sclass:"PSkill",
           },
           {
             title: "프론트엔드 사전",
@@ -46,7 +48,8 @@ export default function Project() {
             git: "https://github.com/JURAMII/dictionary",
             site: "https://juramii.github.io/dictionary/",
             color: "#1a1a1a",
-            Cclass: "ProBtn"
+            Cclass: "ProBtn",
+            Sclass:"PSkill"
           },
           {
             title: "지코바치킨 리뉴얼",
@@ -59,7 +62,8 @@ export default function Project() {
             git: "https://github.com/JURAMII/GCOVA",
             site: "https://juramii.github.io/GCOVA/",
             color: "#1a1a1a",
-            Cclass: "ProBtn"
+            Cclass: "ProBtn",
+            Sclass:"PSkill"
           },
       ];
 

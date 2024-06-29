@@ -138,6 +138,24 @@
     background: var(--basic-black);
 }
 
+/* toy */
+.toy_wrap{
+    height: 100vh;
+}
+.toy_tit{
+    padding: 100px 0;
+}
+.toy_tit h2{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.toy{
+    justify-content: flex-end;
+    gap: 3rem;
+    padding-top: 50px;
+}
+
 /* web-clone */
 .clone_wrap {
     height: 92.2vh;
@@ -236,7 +254,6 @@
     .edu ul {
         height: auto;
     }
-
     .sec10 {
         height: auto;
     }
@@ -296,6 +313,13 @@
 
     .edu ul {
         font-size: 16px;
+    }
+    .toy_tit h2{
+        font-size: 24px;
+    }
+    .toy{
+        flex-direction: column;
+        justify-content: center;
     }
 
     .clone_wrap {

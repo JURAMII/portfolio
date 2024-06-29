@@ -1,7 +1,7 @@
-const Skills = ({skills}) => {
+const Skills = ({skills,Sclass}) => {
     
     return(
-        <ul className="skillBtn_wrap flex">
+        <ul className={`${Sclass} skillBtn_wrap flex`}>
         {skills.map((skill, index)=><li key={index}>{skill}</li>)}
         </ul>
     )
