@@ -29,6 +29,7 @@ nav ul {
 nav li {
     font-size: 18px;
 }
+
 /*모바일 nav*/
 .ham{
     height: 12px;
@@ -63,6 +64,24 @@ nav li {
   top: 0; left: 0;
   z-index: 5;
   background-color: var(--bg);
+  overflow: hidden;
+}
+.ham_menu ul{
+  width: 100%;
+  position: relative;
+  top: 20%;
+}
+.ham_menu li{
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: bold;
+}
+.ham_menu li:hover{
+  font-style: italic;
+  text-decoration: line-through;
+  font-weight: 400;
 }
 
 /* circle */
@@ -109,9 +128,8 @@ nav li {
 /* project */
 .proCom_wrap{
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
-  /* border: 1px solid darkblue; */
 }
 .proCom_wrap h2{
   padding: 100px 0;
@@ -142,7 +160,7 @@ nav li {
 }
 .cont_wrap p:nth-child(5){
   width: 100%;
-  height: 54%;
+  height: 53.5%;
   line-height: 1.5;
 }
 .cont_wrap p:nth-child(5)::before{
@@ -166,15 +184,14 @@ figure img{
   width: 479px;
   height: 262px;
   text-align: center;
-  border: 1px solid rebeccapurple;
 }
 .ToyCome_cont figcaption{
-  padding: 20px 0 0;
+  padding: 15px 0 0;
 }
 .ToyCome_cont p{
   white-space: pre-wrap;
   line-height: 1.2;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .toy_txt{
   height: 72px;
@@ -246,17 +263,20 @@ figure img{
   padding-bottom: 50px;
 }
 
-
 /* 반응형 */
 @media screen and (max-width : 1065px) {
-
+  figure img{
+    width: 350px;
+    height: 192px;
+  }
+  .ToyCome_cont{
+    width: 350px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width : 768px) {
 
-  .proCom_wrap h2{
-    padding: 50px 0;
-  }
 	.proCom {
     padding: 0;
 		flex-direction: column;
@@ -290,6 +310,7 @@ figure img{
     justify-content: center;
   }
   .PSkill{
+    flex-wrap: wrap;
     justify-content: center;
   }
   .skillBtn_wrap li{
@@ -297,6 +318,16 @@ figure img{
     width: 70px;
     line-height: 30px;
   }
+  figure img{
+    width: 100%;
+    height: auto;
+  }
+  .ToyCome_cont{
+    width: 100%;
+  }
+  .clone_font_wrap{
+    padding-top: 100px;
+   }
   .clone_font_wrap p:first-child::after{
     left: 46%;
   }

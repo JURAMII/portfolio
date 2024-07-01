@@ -1,8 +1,17 @@
-import ToyCom from '../components/toyCom'
-import './pageStyle.css'
-import { Todo, MySelf } from '../assets/img/images'
+import ToyCom from '../components/toyCom';
+import './pageStyle.css';
+import { Todo, MySelf } from '../assets/img/images';
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default function Toy(){
+
+    useEffect(() => {
+        AOS.init({once: false});
+        AOS.refresh();
+      },[])
 
     const toys = [
     
@@ -37,7 +46,7 @@ export default function Toy(){
 
 
     return(
-        <section className='toy_wrap basic_section'>
+        <section className='toy_wrap basic_section' data-aos="fade-down" data-aos-easing="ease-in-out" id='toy'>
             <div className='toy_tit'>
             <h2>Toy</h2>
             <h2>Project</h2>

@@ -13,7 +13,7 @@ export default function Contact () {
       },[])
 
     return(
-        <section className="sec10">
+        <section className="sec10" id='contact'>
             <div className="contact_wrap basic_section">
                 <div className='lets'>
                 <h3 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="200">LET'S WORK</h3>

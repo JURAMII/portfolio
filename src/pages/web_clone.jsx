@@ -32,7 +32,7 @@ export default function WebClone() {
       },
       {
         title: "국립공주박물관",
-        skill: "HTML·CSS",
+        skill: "HTML · CSS",
         date: "2024.02.19 - 02.20",
         backimg: Gongju,
         id: 2,
@@ -43,7 +43,7 @@ export default function WebClone() {
       },
       {
         title: "KT&G 장학재단",
-        skill: "HTML·CSS",
+        skill: "HTML · CSS",
         date: "2024.02.15 - 02.16",
         backimg: Kt,
         id: 3,
@@ -54,7 +54,7 @@ export default function WebClone() {
       },
       {
         title: "비즈카",
-        skill: "HTML·CSS·JS",
+        skill: "HTML · CSS · JS",
         date: "2024.02.07 - 02.08",
         backimg: Bizcar,
         id: 4,
@@ -66,7 +66,7 @@ export default function WebClone() {
     
     {
       title: "도미노",
-      skill: "HTML·CSS·JS",
+      skill: "HTML · CSS · JS",
       date: "2024.02.06",
       backimg: Domino,
       id: 5,
@@ -78,9 +78,8 @@ export default function WebClone() {
   ];
 
   return (
-    <section className="clone_wrap" data-aos="fade-down" data-aos-easing="ease-in-out">
-      <div>
-        <h2 className="tit_font">Web-clone</h2>
+    <section className="clone_wrap" data-aos="fade-down" data-aos-easing="ease-in-out" id="clone">
+      <h2 className="tit_font">Web-clone</h2>
         <Swiper
           watchSlidesProgress={true}
           slidesPerView={1}
@@ -102,7 +101,7 @@ export default function WebClone() {
           },
           
           }}
-          className="mySwiper"
+          className="mySwiper2"
         >
           {clones.map((clone, index) => (
             <SwiperSlide key={index}>
@@ -110,7 +109,6 @@ export default function WebClone() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
     </section>
   );
 }

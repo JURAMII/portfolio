@@ -13,7 +13,7 @@ export default function About () {
       },[])
 
     return (
-        <section className="sec2" data-aos="fade-down" data-aos-easing="ease-in-out">
+        <section className="sec2" data-aos="fade-down" data-aos-easing="ease-in-out" id='about'>
             <div className="basic_section about">
                 <h2 className='tit_font'>About</h2>
                 <div className="about_wrap flex">

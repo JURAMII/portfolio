@@ -1,6 +1,10 @@
 import "./pageStyle.css";
 import {Night, Port, Gicova, Dict} from "../assets/img/images"
 import ProCom from "../components/proCom";
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,6 +12,12 @@ import "swiper/css/pagination";
 import { Mousewheel, Pagination } from "swiper/modules";
 
 export default function Project() {
+
+  useEffect(() => {
+    AOS.init({once: false});
+    AOS.refresh();
+  },[])
+
     const projects = [
           {
             title: "고궁의 밤",
@@ -68,23 +78,24 @@ export default function Project() {
       ];
 
   return (
-    <div className="basic_section project_wrap">
+    <section className="basic_section project_wrap" data-aos="fade-down" data-aos-easing="ease-in-out" id="project">
+        <h2 className="tit_font">Project</h2>
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={0}
         mousewheel={true}
         pagination={{
           clickable: true,
         }}
         modules={[Mousewheel, Pagination]}
-        className="mySwiper2"
+        className="mySwiper1"
       >
         {projects.map((project, index)=> 
         <SwiperSlide key={index}>
           <ProCom {...project}/>
         </SwiperSlide>)}
       </Swiper>
-    </div>
+    </section>
   );
 }

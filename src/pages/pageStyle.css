@@ -7,7 +7,6 @@
     height: 100vh;
     padding: 50px 0;
     position: relative;
-    margin: 0 auto;
     background-color: var(--basic-black);
     overflow: hidden;
 }
@@ -47,7 +46,7 @@
 }
 
 .about h2 {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .about_wrap {
@@ -125,25 +124,28 @@
 /* project */
 .project_wrap {
     height: 100vh;
-    overflow: hidden;
     white-space: pre-wrap;
 }
-
+.project_wrap h2{
+    padding: 100px 0;
+  }
 .project_wrap .swiper {
     width: 100%;
     height: 100%;
 }
-
+.project_wrap .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+    top: 20%;
+}
 .project_wrap .swiper-pagination-bullet-active {
     background: var(--basic-black);
 }
 
 /* toy */
 .toy_wrap{
-    height: 100vh;
+    padding-bottom: 100px;
 }
 .toy_tit{
-    padding: 100px 0;
+    padding: 0 0 100px;
 }
 .toy_tit h2{
     font-size: 48px;
@@ -157,13 +159,8 @@
 }
 
 /* web-clone */
-.clone_wrap {
-    height: 92.2vh;
-    overflow: hidden;
-}
-
 .clone_wrap h2 {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .clone_wrap .swiper {
@@ -176,7 +173,7 @@
 }
 
 .clone_wrap .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: Gold;
+    background: #FF6F61;
 }
 
 /* contacts */
@@ -254,6 +251,9 @@
     .edu ul {
         height: auto;
     }
+    .toy{
+        padding-top: 0;
+    }
     .sec10 {
         height: auto;
     }
@@ -286,12 +286,15 @@
 }
 
 @media screen and (max-width : 768px) {
+
     .about_wrap {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    .about h2 {
+        padding: 0 0 50px;
+    }
     .my {
         width: 200px;
         height: 200px;
@@ -314,18 +317,35 @@
     .edu ul {
         font-size: 16px;
     }
+    .project_wrap {
+        height: 750px;
+    }
+    .project_wrap h2{
+        padding: 50px 0;
+      }
+    
+    .toy_wrap{
+        padding-bottom: 0;
+    }
+    .toy_tit{
+        display: flex;
+        justify-content: center;
+        padding: 0 0 50px;
+    }
     .toy_tit h2{
         font-size: 24px;
+        padding-left: 5px;
     }
     .toy{
         flex-direction: column;
         justify-content: center;
     }
-
-    .clone_wrap {
-        height: 847px;
+    .clone_wrap .swiper {
+        height: 500px;
     }
-
+    .clone_wrap h2{
+        padding: 50px 0;
+    }
     .lets h3 {
         font-size: 50px;
     }
@@ -351,6 +371,7 @@
 }
 
 @media screen and (max-width : 500px) {
+
     .intro{
         padding-top: 20px;
     }

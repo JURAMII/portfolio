@@ -1,16 +1,18 @@
 import './compoStyle.css';
 import AOS from 'aos';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
-const Navi = ({ navs, ref }) => {
+const Navi = ({ navs, color }) => {
+
     return (
         <nav>
-            <ul className='flex' ref={ref}>
-                {navs.map((nav, index) => <li key={index}>{nav}</li>)}
+            <ul className='flex'>
+                {navs.map((nav, index) => <li key={index} ><a href={`#${nav.navId}`} style={{ color: color }}>{nav.navTit}</a></li>)}
             </ul>
         </nav>
     )
 }
+
 
 const Ham = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -23,30 +25,65 @@ const Ham = () => {
         <>
             {menuOpen && (
                 <div className='ham_menu'>
-                    <ul>
-                        <li>ABOUT</li>
-                        <li>Projects</li>
-                        <li>Toy</li>
-                        <li>Web-clone</li>
-                        <li>Contact</li>
+                    <ul onClick={handleMenuToggle}>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#toy">Toy Project</a></li>
+                        <li><a href="#clone">Web-clone</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>)}
-            {menuOpen ?
-                <div className='ham set' onClick={handleMenuToggle}>
-                    <span></span>
-                    <span></span>
-                </div> :
-                <div className='ham' onClick={handleMenuToggle}>
-                    <span></span>
-                    <span></span>
-                </div>}
+            <div className={`ham ${menuOpen ? 'set' : ''}`} onClick={handleMenuToggle}>
+                <span></span>
+                <span></span>
+            </div>
         </>
     )
 }
 
 const Header = () => {
 
-    let navs = ['About', 'Projects', 'Toy', 'Web-clone', 'Contact']
+    let navs = [
+        {
+            navTit: 'About',
+            navId: 'about'
+        },
+        {
+            navTit: 'Project',
+            navId: 'project'
+        }, {
+            navTit: 'Toy-Project',
+            navId: 'toy'
+        }, {
+            navTit: 'Web-clone',
+            navId: 'clone'
+        }, {
+            navTit: 'Contact',
+            navId: 'contact'
+        },
+    ];
+
+    const [scroll, setScroll] = useState(false);
+    const [Hscroll, setHScroll] = useState(false);
+    const color = '#fff';
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll); //clean up
+        };
+    }, []);
+
+    const handleScroll = () => {
+        // 스크롤이 Top에서 4100px 이상 내려오면 true값을 useState에 넣어줌
+        if (window.scrollY >= 4100) {
+            setScroll(true);
+        } else {
+            // 스크롤이 4100px 미만일경우 false를 넣어줌
+            setScroll(false);
+        }
+
+    };
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -65,15 +102,15 @@ const Header = () => {
         AOS.refresh();
     }, [])
 
-
     return (
         <header>
             <div className='basic_section flex header_wrap'>
-                <h1>DANBI</h1>
-                {isMobile ? <Ham /> : <Navi navs={navs} />}
+                <h1><a href="#" style={scroll ? { color: '#fff' } : {}}>DANBI</a></h1>
+                {isMobile ? <Ham color={Hscroll?color:undefined}/> : <Navi navs={navs} color={scroll ? color : undefined} />}
             </div>
         </header>
     )
 }
+//ham 409가 끝
 
 export default Header

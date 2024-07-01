@@ -6,7 +6,6 @@ const ProCom = ({title, skill, date, img, people, git, site, color, txt, Cclass,
 
     return(
         <div className="proCom_wrap">
-        <h2 className="tit_font">Project</h2>
         <div className="proCom flex">
             <div className='proImg'><img src={img} alt="project" /></div>
             <div className="cont_wrap">

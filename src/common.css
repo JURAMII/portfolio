@@ -8,6 +8,8 @@
 *{  
     color: var(--basic-black);
     font-family: "Noto Sans KR", sans-serif;
+    scroll-behavior: smooth;
+    
 }
 body{
     background-color: var(--bg);
@@ -19,7 +21,6 @@ body{
 .basic_section{
     width: 1440px;
     margin: 0 auto;
-    /* overflow: hidden; */
 }
 
 .tit_font{
@@ -35,6 +36,10 @@ body{
     font-size: 18px;
 }
 
+/* 스크롤바 */
+html::-webkit-scrollbar {width: 8px; background-color: #fff;}
+html::-webkit-scrollbar-thumb {background-color: var(--basic-black); border-radius: 10px;}
+
 /* 반응형 */
 @media screen and (max-width : 1440px) {
 	.basic_section {
@@ -42,6 +47,10 @@ body{
 	}
 }
 @media screen and (max-width : 768px) {
+    *{  
+        scroll-behavior: auto;
+        
+    }
     .tit_font{
         font-size: 24px;
     }
