@@ -3,7 +3,6 @@
 
 /* intro */
 .sec1 {
-    /* height: calc(100vh - 70px); */
     height: 100vh;
     padding: 50px 0;
     position: relative;
@@ -40,6 +39,52 @@
     text-align: center;
 }
 
+/* intro_mobile */
+.intro_wrap{
+    height: 100vh;
+    display: none;
+}
+.intro{
+    padding: 300px 0 50px;
+    justify-content: center;
+    align-items: center;
+}
+.intro svg{
+    height: auto;
+}
+#DANBI {
+    animation: stroke 3s 1 alternate;
+}
+.intro_wrap h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+@keyframes stroke {
+    0%   {
+      stroke-dashoffset: 25%;
+      stroke-dasharray: 0 50%;
+      fill: rgba(72,138,204,0);
+      stroke: var(--basic-black);
+      stroke-width: 2;
+    }
+    70%  {
+      fill: rgba(72,138,204,0);
+      stroke: var(--basic-black);
+    }
+    80%  {
+      fill: rgba(72,138,204,0);
+      stroke: var(--basic-black);
+    }
+    100% {
+      stroke-dashoffset: -25%;
+      stroke-dasharray: 50% 0;
+      stroke: var(--basic-black);
+      stroke-width: 0;
+    }
+  }
+
+
 /* about */
 .sec2 {
     background-color: var(--bg);
@@ -60,12 +105,12 @@
     background-color: var(--basic-black);
 }
 
-.intro li {
+.about li {
     font-size: 18px;
     padding-bottom: 45px;
 }
 
-.intro span {
+.about span {
     display: inline-block;
     width: 60px;
     margin-right: 20px;
@@ -180,7 +225,7 @@
 .sec10 {
     width: 100%;
     background-color: var(--basic-black);
-    height: 847px;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -231,7 +276,13 @@
 
 /* 반응형 */
 @media screen and (max-width : 1065px) {
-    .intro {
+    .sec1{
+        display: none;
+    }
+    .intro_wrap{
+        display: block;
+    }
+    .about {
         width: 100%;
     }
 
@@ -305,7 +356,7 @@
         height: 210px;
     }
 
-    .intro li {
+    .about li {
         font-size: 16px;
         padding-bottom: 20px;
     }
@@ -372,7 +423,7 @@
 
 @media screen and (max-width : 500px) {
 
-    .intro{
+    .about{
         padding-top: 20px;
     }
     .skill {

@@ -9,7 +9,6 @@ export default function Contact () {
     
     useEffect(() => {
         AOS.init({once: false});
-        AOS.refresh();
       },[])
 
     return(

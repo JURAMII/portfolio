@@ -7,34 +7,38 @@ import WebClone from "./pages/web_clone";
 import Project from "./pages/project";
 import Toy from "./pages/toy";
 import Contact from "./pages/contact";
+import IntroMob from "./pages/intro_mob";
 
 function App() {
 
-  const [scroll, setScroll] = useState(false);
+//   const [scroll, setScroll] = useState(false);
 
-useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll); //clean up
-    };
-  }, []);
+// useEffect(() => {
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll); //clean up
+//     };
+//   }, []);
 
-  const handleScroll = () => {
-    console.log("window.scrollY : ", window.scrollY)
-  };
+//   const handleScroll = () => {
+//     console.log("window.scrollY : ", window.scrollY)
+//   };
 
   return (
-    <div onScroll={handleScroll}>
+    // <div onScroll={handleScroll}>
     <>
-    <Header/>
+    {/* <Header/>
     <Intro/>
     <About/>
     <Project/>
     <Toy/>
     <WebClone/>
-    <Contact/>
+    <Contact/> */}
+    <Header/>
+    <Intro/>
+    <IntroMob/>
     </>
-    </div>
+    // </div>
   )
 }
 

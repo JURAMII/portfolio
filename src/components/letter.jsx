@@ -1,3 +1,5 @@
+import './compoStyle.css'
+
 const Letter = () => {
 
   return (

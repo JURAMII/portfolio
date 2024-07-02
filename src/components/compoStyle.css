@@ -50,12 +50,12 @@ nav li {
 .set.ham span:first-child{
   position: relative;
   top: 50%; left: 0; transform: rotate(45deg);
-  transition-duration: 0.4s
+  transition-duration: 0.4s;
 }
 .set.ham span:last-child{
   position: relative;
   top: -50%; left: 0; transform: rotate(-45deg);
-  transition-duration: 0.4s
+  transition-duration: 0.4s;
 }
 .ham_menu{
   width: 100%;
@@ -104,7 +104,7 @@ nav li {
 .marquee{ width: 100%; text-align: center; display: flex; }
 .marquee .play{ display: flex; justify-content: space-around; animation: marquee 30s linear infinite; min-width: 170%; flex-shrink: 0; font-size: 10vw; font-weight: 300;}
 .marquee .play h1 { font-family: "Roboto", sans-serif; }
-.marquee .play h2{ font-weight: 700; color: var(--bg); -webkit-text-stroke: 1px var(--basic-black); font-family: "Roboto", sans-serif;}
+.marquee .play h2{ font-weight: 700; color: var(--bg); -webkit-text-stroke: 2px var(--basic-black); font-family: "Roboto", sans-serif;}
 
 @keyframes marquee {
     0%{ transform: 0; }

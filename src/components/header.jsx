@@ -14,11 +14,13 @@ const Navi = ({ navs, color }) => {
 }
 
 
-const Ham = () => {
+const Ham = ({color, setScroll}) => {
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenuToggle = () => {
         setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+        setScroll(false)
     };
 
     return (
@@ -34,8 +36,8 @@ const Ham = () => {
                     </ul>
                 </div>)}
             <div className={`ham ${menuOpen ? 'set' : ''}`} onClick={handleMenuToggle}>
-                <span></span>
-                <span></span>
+                <span style={{ backgroundColor : color }}></span>
+                <span style={{ backgroundColor : color }}></span>
             </div>
         </>
     )
@@ -64,7 +66,6 @@ const Header = () => {
     ];
 
     const [scroll, setScroll] = useState(false);
-    const [Hscroll, setHScroll] = useState(false);
     const color = '#fff';
 
     useEffect(() => {
@@ -78,12 +79,17 @@ const Header = () => {
         // 스크롤이 Top에서 4100px 이상 내려오면 true값을 useState에 넣어줌
         if (window.scrollY >= 4100) {
             setScroll(true);
-        } else {
-            // 스크롤이 4100px 미만일경우 false를 넣어줌
+        } else if(window.innerWidth <= 768 && window.scrollY >= 3800){
+            setScroll(true);
+        }else{
             setScroll(false);
         }
 
     };
+
+    console.log(
+        
+    )
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -106,7 +112,7 @@ const Header = () => {
         <header>
             <div className='basic_section flex header_wrap'>
                 <h1><a href="#" style={scroll ? { color: '#fff' } : {}}>DANBI</a></h1>
-                {isMobile ? <Ham color={Hscroll?color:undefined}/> : <Navi navs={navs} color={scroll ? color : undefined} />}
+                {isMobile ? <Ham color={scroll ? color : undefined} setScroll={setScroll}/> : <Navi navs={navs} color={scroll ? color : undefined} />}
             </div>
         </header>
     )

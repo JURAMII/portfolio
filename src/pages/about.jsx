@@ -19,7 +19,7 @@ export default function About () {
                 <div className="about_wrap flex">
                     <div className="my"><img src={Me} alt="me" /></div>
                     <div>
-                        <ul className="intro">
+                        <ul className="about">
                             <li><span className='sub_font'>Name</span>정단비</li>
                             <li><span className='sub_font'>Birth</span>1995 .02 .10</li>
                             <li><span className='sub_font'>Tel</span>010-8533-1068</li>
