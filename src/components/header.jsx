@@ -72,6 +72,10 @@ const Header = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
+
+        AOS.init();
+        AOS.refresh();
+        
         window.addEventListener('scroll', handleScroll);
 
         return () => {
@@ -92,6 +96,7 @@ const Header = () => {
     };
 
     useEffect(() => {
+
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
         };
@@ -99,13 +104,8 @@ const Header = () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
 
+
     }, []);
-
-
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, [])
 
 
     return (

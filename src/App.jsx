@@ -14,6 +14,7 @@ function App() {
   const [mob, setMob] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
+
     const handleResize = () => {
       setMob(window.innerWidth <= 768);
     };
@@ -22,6 +23,7 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
 
   }, []); //인트로 분리
+
 
   return (
     <>
