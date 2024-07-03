@@ -417,6 +417,10 @@
 
 @media screen and (max-width : 768px) {
 
+    .intro{
+        padding-top: 250px;
+    }
+
     .intro_wrap h2 {
         font-size: 20px;
     }
