@@ -14,8 +14,7 @@ import { Mousewheel, Pagination, Autoplay } from "swiper/modules";
 export default function Project() {
 
   useEffect(() => {
-    AOS.init({once: false});
-    AOS.refresh();
+    AOS.init({once: false,});
   },[])
 
     const projects = [

@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 export default function Contact () {
     
     useEffect(() => {
-        AOS.init({once: false});
+        AOS.init({once: false,});
       },[])
 
     return(

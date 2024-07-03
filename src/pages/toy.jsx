@@ -9,8 +9,7 @@ import "aos/dist/aos.css";
 export default function Toy(){
 
     useEffect(() => {
-        AOS.init({once: false});
-        AOS.refresh();
+        AOS.init({once: false,});
       },[])
 
     const toys = [

@@ -8,8 +8,12 @@ import "aos/dist/aos.css";
 export default function About () {
 
     useEffect(() => {
-        AOS.init({once: false});
-        AOS.refresh();
+        AOS.init({once: false,
+            disable: function () {
+                var mobile = 768;
+                return window.innerWidth < mobile;
+              } // 768 이하일 때 disable
+        });
       },[])
 
     return (

@@ -9,7 +9,7 @@ export default function Intro () {
     const nameRef = useRef();
 
     useEffect(() => {
-        AOS.init({once: true});
+        AOS.init({once: true,});
       },[])
 
       setTimeout(() => {

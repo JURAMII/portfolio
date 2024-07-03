@@ -14,8 +14,7 @@ import "aos/dist/aos.css";
 export default function WebClone() {
 
   useEffect(() => {
-    AOS.init({once: false});
-    AOS.refresh();
+    AOS.init({once: false,});
   },[])
 
   const clones = [

@@ -423,6 +423,9 @@
 
     .intro_wrap h2 {
         font-size: 20px;
+        position: relative;
+        transform: translateY(-100);
+        transition: 1s ease-in-out;
     }
 
     .about_wrap {
