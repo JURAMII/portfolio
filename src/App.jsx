@@ -25,18 +25,14 @@ function App() {
 
   return (
     <>
-      {/* <Header/>
-    <Intro/>
-    <About/>
-    <Project/>
-    <Toy/>
-    <WebClone/>
-    <Contact/> */}
-      <Header />
       {mob ? <IntroMob /> : <Intro />}
+      <Header />
       <About/>
+      <Project/>
+      <Toy/>
+      <WebClone/>
+      <Contact/>
     </>
-    // </div>
   )
 
 };

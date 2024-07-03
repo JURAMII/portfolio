@@ -35,6 +35,7 @@ export default function Intro () {
         <h3 className='last_name' data-aos="zoom-in" data-aos-delay="3000"data-aos-easing="ease-in-out">B</h3>
         <h3 className='last_name' data-aos="zoom-in" data-aos-delay="3000"data-aos-easing="ease-in-out">I</h3>
         </div>
+        <h4 data-aos="fade-up" data-aos-delay="3000" data-aos-easing="ease-in-out">Front-end Developer & Web-Publisher Portfolio</h4>
         </div>
         </section>
         

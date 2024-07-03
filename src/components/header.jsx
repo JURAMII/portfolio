@@ -14,7 +14,7 @@ const Navi = ({ navs, color }) => {
 }
 
 
-const Ham = ({color, setScroll}) => {
+const Ham = ({ color, setScroll }) => {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,14 +36,16 @@ const Ham = ({color, setScroll}) => {
                     </ul>
                 </div>)}
             <div className={`ham ${menuOpen ? 'set' : ''}`} onClick={handleMenuToggle}>
-                <span style={{ backgroundColor : color }}></span>
-                <span style={{ backgroundColor : color }}></span>
+                <span style={{ backgroundColor: color }}></span>
+                <span style={{ backgroundColor: color }}></span>
             </div>
         </>
     )
 }
 
 const Header = () => {
+
+    let headerRef = useRef();
 
     let navs = [
         {
@@ -67,10 +69,11 @@ const Header = () => {
 
     const [scroll, setScroll] = useState(false);
     const color = '#fff';
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        
+
         return () => {
             window.removeEventListener('scroll', handleScroll); //clean up
         };
@@ -80,15 +83,13 @@ const Header = () => {
         // 스크롤이 Top에서 4100px 이상 내려오면 true값을 useState에 넣어줌
         if (window.scrollY >= 4100) {
             setScroll(true);
-        } else if(window.innerWidth <= 768 && window.scrollY >= 3800){
+        } else if (window.innerWidth <= 768 && window.scrollY >= 3800) {
             setScroll(true);
-        }else{
+        } else {
             setScroll(false);
         }
 
     };
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
         const handleResize = () => {
@@ -108,10 +109,10 @@ const Header = () => {
 
 
     return (
-        <header>
+        <header ref={headerRef}>
             <div className='basic_section flex header_wrap'>
                 <h1><a href="#" style={scroll ? { color: '#fff' } : {}}>DANBI</a></h1>
-                {isMobile ? <Ham color={scroll ? color : undefined} setScroll={setScroll}/> : <Navi navs={navs} color={scroll ? color : undefined} />}
+                {isMobile ? <Ham color={scroll ? color : undefined} setScroll={setScroll} /> : <Navi navs={navs} color={scroll ? color : undefined} />}
             </div>
         </header>
     )

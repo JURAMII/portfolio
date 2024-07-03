@@ -97,7 +97,6 @@ export default function WebClone() {
           breakpoints={{   
             768:{
           slidesPerView:3,
-          autoplay:false,     
           },
           
           }}

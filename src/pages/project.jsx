@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Mousewheel, Pagination } from "swiper/modules";
+import { Mousewheel, Pagination, Autoplay } from "swiper/modules";
 
 export default function Project() {
 
@@ -84,11 +84,18 @@ export default function Project() {
         direction={"vertical"}
         slidesPerView={1}
         spaceBetween={0}
-        mousewheel={true}
+        // mousewheel={true}
+        loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
         pagination={{
           clickable: true,
         }}
-        modules={[Mousewheel, Pagination]}
+        // modules={[Mousewheel, Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper1"
       >
         {projects.map((project, index)=> 
