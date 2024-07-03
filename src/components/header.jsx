@@ -70,6 +70,7 @@ const Header = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+        
         return () => {
             window.removeEventListener('scroll', handleScroll); //clean up
         };
@@ -87,10 +88,6 @@ const Header = () => {
 
     };
 
-    console.log(
-        
-    )
-
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
@@ -100,6 +97,7 @@ const Header = () => {
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
+
     }, []);
 
 
@@ -107,6 +105,7 @@ const Header = () => {
         AOS.init();
         AOS.refresh();
     }, [])
+
 
     return (
         <header>
@@ -117,6 +116,5 @@ const Header = () => {
         </header>
     )
 }
-//ham 409가 끝
 
 export default Header

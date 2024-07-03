@@ -11,35 +11,34 @@ import IntroMob from "./pages/intro_mob";
 
 function App() {
 
-//   const [scroll, setScroll] = useState(false);
+  const [mob, setMob] = useState(window.innerWidth <= 768);
 
-// useEffect(() => {
-//     window.addEventListener('scroll', handleScroll);
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll); //clean up
-//     };
-//   }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setMob(window.innerWidth <= 768);
+    };
 
-//   const handleScroll = () => {
-//     console.log("window.scrollY : ", window.scrollY)
-//   };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+
+  }, []); //인트로 분리
 
   return (
-    // <div onScroll={handleScroll}>
     <>
-    {/* <Header/>
+      {/* <Header/>
     <Intro/>
     <About/>
     <Project/>
     <Toy/>
     <WebClone/>
     <Contact/> */}
-    <Header/>
-    <Intro/>
-    <IntroMob/>
+      <Header />
+      {mob ? <IntroMob /> : <Intro />}
+      <About/>
     </>
     // </div>
   )
-}
+
+};
 
 export default App
