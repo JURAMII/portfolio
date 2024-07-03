@@ -215,6 +215,7 @@
 
 .toy_tit {
     padding: 100px 0;
+    background-color: var(--bg);
 }
 
 .toy_tit h2 {
@@ -452,9 +453,9 @@
     .edu ul {
         font-size: 16px;
     }
-    
+
     .project_wrap h2 {
-        padding: 50px 0;
+        padding-bottom: 50px;
     }
 
     .toy_wrap {
@@ -464,7 +465,7 @@
     .toy_tit {
         display: flex;
         justify-content: center;
-        padding: 0 0 50px;
+        padding-bottom: 50px;
     }
 
     .toy_tit h2 {
@@ -477,13 +478,14 @@
         justify-content: center;
     }
 
+    .clone_wrap h2 {
+        padding-bottom: 50px;
+    }
+
     .clone_wrap .swiper {
         height: 500px;
     }
 
-    .clone_wrap h2 {
-        padding: 50px 0;
-    }
 
     .lets h3 {
         font-size: 50px;
