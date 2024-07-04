@@ -20,14 +20,20 @@ const Ham = ({ color, setScroll }) => {
 
     const handleMenuToggle = () => {
         setMenuOpen((prevMenuOpen) => !prevMenuOpen);
-        setScroll(false)
+        setScroll(false);
+        scrollTo({top:0,})
     };
+
 
     return (
         <>
+            <div className={`ham ${menuOpen ? 'set' : ''}`} onClick={()=>{handleMenuToggle();}}>
+                <span style={{ backgroundColor: color }}></span>
+                <span style={{ backgroundColor: color }}></span>
+            </div>
             {menuOpen && (
-                <div className='ham_menu'>
-                    <ul onClick={handleMenuToggle}>
+                <div className='ham_menu' onClick={handleMenuToggle}>
+                    <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#project">Project</a></li>
                         <li><a href="#toy">Toy Project</a></li>
@@ -35,10 +41,6 @@ const Ham = ({ color, setScroll }) => {
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>)}
-            <div className={`ham ${menuOpen ? 'set' : ''}`} onClick={handleMenuToggle}>
-                <span style={{ backgroundColor: color }}></span>
-                <span style={{ backgroundColor: color }}></span>
-            </div>
         </>
     )
 }
