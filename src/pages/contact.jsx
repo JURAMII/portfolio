@@ -1,16 +1,10 @@
-import './pageStyle.css'
+import "../css/pageStyle.css";
 import { GithubW } from "../assets/img/images"
 import { useEffect } from 'react';
-import AOS from 'aos';
-import "aos/dist/aos.css";
 
 
 export default function Contact () {
     
-    useEffect(() => {
-        AOS.init({once: false,});
-      },[])
-
     return(
         <section className="sec10" id='contact'>
             <div className="contact_wrap basic_section">

@@ -1,6 +1,6 @@
-import './compoStyle.css'
-import Skills from "./skills"
-import Btn from './btn'
+import '../css/compoStyle.css';
+import Skills from "./skills";
+import Btn from './btn';
 
 const ProCom = ({title, skill, date, img, people, git, site, color, txt, Cclass, Sclass}) =>{
 

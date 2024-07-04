@@ -1,16 +1,11 @@
-import './pageStyle.css';
+import "../css/pageStyle.css";
 import { useEffect, useRef } from 'react';
-import AOS from 'aos';
-import "aos/dist/aos.css";
+
 import Circle from '../components/circle';
 
 export default function Intro () {
     
     const nameRef = useRef();
-
-    useEffect(() => {
-        AOS.init({once: true,});
-      },[])
 
       setTimeout(() => {
         nameRef.current.style.opacity='0';

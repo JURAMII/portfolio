@@ -1,4 +1,4 @@
-import "./pageStyle.css";
+import "../css/pageStyle.css";
 import CloneCom from "../components/cloneCom";
 import { useEffect } from "react";
 import { Domino, Bizcar, Gongju, Kt, Socar } from "../assets/img/images";
@@ -8,14 +8,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import 'swiper/css/pagination';
 
-import AOS from 'aos';
-import "aos/dist/aos.css";
-
 export default function WebClone() {
-
-  useEffect(() => {
-    AOS.init({once: false,});
-  },[])
 
   const clones = [
     {

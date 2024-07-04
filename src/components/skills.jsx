@@ -1,3 +1,6 @@
+import '../css/compoStyle.css';
+
+
 const Skills = ({skills,Sclass}) => {
     
     return(

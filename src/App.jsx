@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 import Header from "./components/header";
 import Intro from "./pages/intro";
@@ -12,6 +14,15 @@ import IntroMob from "./pages/intro_mob";
 function App() {
 
   const [mob, setMob] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    AOS.init({once: false,
+      disable: function () {
+          var mobile = 768;
+          return window.innerWidth < mobile;
+        } // 768 이하일 때 disable
+  });
+  },[])
 
   useEffect(() => {
 

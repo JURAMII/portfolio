@@ -1,10 +1,7 @@
-import "./pageStyle.css";
+import "../css/pageStyle.css";
 import {Night, Port, Gicova, Dict} from "../assets/img/images"
 import ProCom from "../components/proCom";
 import { useEffect } from "react";
-
-import AOS from 'aos';
-import "aos/dist/aos.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -13,9 +10,6 @@ import { Mousewheel, Pagination, Autoplay } from "swiper/modules";
 
 export default function Project() {
 
-  useEffect(() => {
-    AOS.init({once: false,});
-  },[])
 
     const projects = [
           {
@@ -80,7 +74,6 @@ export default function Project() {
     <section className="basic_section project_wrap" data-aos="fade-down" data-aos-easing="ease-in-out" id="project">
         <h2 className="tit_font">Project</h2>
       <Swiper
-        direction={"vertical"}
         slidesPerView={1}
         spaceBetween={0}
         // mousewheel={true}
@@ -95,6 +88,14 @@ export default function Project() {
         }}
         // modules={[Mousewheel, Pagination]}
         modules={[Autoplay, Pagination]}
+
+        breakpoints={{   
+          768:{
+            direction:"vertical",
+        },
+        
+        }}
+        
         className="mySwiper1"
       >
         {projects.map((project, index)=> 

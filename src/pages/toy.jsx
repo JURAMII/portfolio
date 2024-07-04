@@ -1,16 +1,9 @@
 import ToyCom from '../components/toyCom';
-import './pageStyle.css';
+import "../css/pageStyle.css";
 import { Todo, MySelf } from '../assets/img/images';
 import { useEffect } from "react";
 
-import AOS from 'aos';
-import "aos/dist/aos.css";
-
 export default function Toy(){
-
-    useEffect(() => {
-        AOS.init({once: false,});
-      },[])
 
     const toys = [
     

@@ -1,20 +1,8 @@
-import './pageStyle.css';
+import "../css/pageStyle.css";
 import Letter from '../components/letter';
-import { useEffect } from 'react';
 import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Me } from '../assets/img/images';
-import AOS from 'aos';
-import "aos/dist/aos.css";
 
 export default function About () {
-
-    useEffect(() => {
-        AOS.init({once: false,
-            disable: function () {
-                var mobile = 768;
-                return window.innerWidth < mobile;
-              } // 768 이하일 때 disable
-        });
-      },[])
 
     return (
         <section className="sec2" data-aos="fade-down" data-aos-easing="ease-in-out" id='about'>

@@ -1,5 +1,5 @@
-import './compoStyle.css';
-import AOS from 'aos';
+import '../css/compoStyle.css';
+
 import { useEffect, useState, useRef } from 'react';
 
 const Navi = ({ navs, color }) => {
@@ -72,9 +72,6 @@ const Header = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
-
-        AOS.init();
-        AOS.refresh();
         
         window.addEventListener('scroll', handleScroll);
 

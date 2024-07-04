@@ -1,4 +1,4 @@
-import './compoStyle.css'
+import '../css/compoStyle.css';
 import Btn from './btn'
 
 const CloneCom = ({title, skill, date, backimg, git, site, color, Cclass}) => {

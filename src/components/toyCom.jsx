@@ -1,6 +1,6 @@
-import Btn from './btn'
-import './compoStyle.css'
-import Skills from './skills'
+import Btn from './btn';
+import '../css/compoStyle.css';
+import Skills from './skills';
 
 const ToyCom = ({title, skill, date, img, txt, git, site, color, Cclass, Sclass}) =>{
     return(
