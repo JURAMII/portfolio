@@ -128,9 +128,6 @@ nav li {
   text-align: center;
   font-weight: bold;
 }
-.cloneBtn{
-  justify-content: center;
-}
 
 /* project */
 .proCom_wrap{
@@ -148,7 +145,7 @@ nav li {
 .proImg{
   width: 500px;
   height: 422px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border: 1px solid #ddd;
 }
 .proImg img{
   width: 100%;
@@ -178,8 +175,33 @@ nav li {
   background-color: var(--basic-black);
   margin: 10px 0 20px;
 }
+.ProBtn a{
+  border: 2px solid var(--basic-black);
+  position: relative;
+}
+.ProBtn a::after {
+ position: absolute;
+ content: "";
+ width: 0;
+ height: 100%;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ background: var(--basic-black);
+ transition: all 0.3s ease;
+}
+.ProBtn a:hover {
+ color: #fff;
+}
+.ProBtn a:hover:after {
+ left: 0;
+ width: 100%;
+}
 
 /* toy */
+figure{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 figure img{
   width: 479px;
   height: 262px;
@@ -206,7 +228,28 @@ figure img{
 .toyBtn{
   justify-content: center;
 }
-
+.toyBtn a{
+  border: 2px solid var(--basic-black);
+  position: relative;
+}
+.toyBtn a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--basic-black);
+  transition: all 0.3s ease;
+ }
+ .toyBtn a:hover {
+  color: #fff;
+ }
+ .toyBtn a:hover:after {
+  left: 0;
+  width: 100%;
+ }
 /* skills button*/
 .skillBtn_wrap li{
   width: 85px;
@@ -269,9 +312,26 @@ figure img{
 .clone_font_wrap p:nth-child(3){
   padding-bottom: 50px;
 }
+.cloneBtn{
+  justify-content: center;
+}
+.cloneBtn a{
+  background-color : transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all .5s ease;
+}
+.cloneBtn a:hover{
+  background-color: #fff;
+  color: var(--basic-black);
+}
 
 /* 반응형 */
 @media screen and (max-width : 1065px) {
+  figure{
+    box-shadow: none;
+  }
+
   figure img{
     width: 350px;
     height: 192px;
@@ -293,7 +353,6 @@ figure img{
   .proImg{
     width: 300px;
     height: 222px;
-    box-shadow: none;
     border: 1px solid #ddd;
   }
   .cont_wrap{
@@ -315,6 +374,9 @@ figure img{
   }
   .ProBtn{
     justify-content: center;
+  }
+  .ProBtn a{
+    border: 2px solid var(--basic-black);
   }
   .PSkill{
     flex-wrap: wrap;
