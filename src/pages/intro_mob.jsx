@@ -6,7 +6,7 @@ export default function IntroMob() {
     const mobIntroH2 = useRef();
 
 
-      setTimeout(() => mobIntroH2.current.style.bottom = 0, 3000);
+      setTimeout(() => mobIntroH2.current.style.opacity = 1, 3000);
 
     return (
         <section className="intro_wrap basic_section">

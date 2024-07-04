@@ -53,7 +53,7 @@
 }
 
 .intro {
-    padding: 300px 0 50px;
+    padding: 300px 0 30px;
     justify-content: center;
     align-items: center;
 }
@@ -69,6 +69,8 @@
 .intro_wrap h2 {
     font-size: 24px;
     text-align: center;
+    opacity: 0;
+    transition: 1s ease-in-out;
 }
 
 @keyframes stroke {
@@ -422,10 +424,7 @@
     }
 
     .intro_wrap h2 {
-        font-size: 20px;
-        position: relative;
-        transform: translateY(-100%);
-        transition: 1s ease-in-out;
+        font-size: 16px;
     }
 
     .about_wrap {

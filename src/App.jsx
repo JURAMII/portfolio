@@ -16,7 +16,7 @@ function App() {
   const [mob, setMob] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    AOS.init({once: false,
+    AOS.init({
       disable: function () {
           var mobile = 768;
           return window.innerWidth < mobile;
