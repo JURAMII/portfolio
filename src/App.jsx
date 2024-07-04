@@ -17,10 +17,10 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      disable: function () {
-          var mobile = 768;
-          return window.innerWidth < mobile;
-        } // 768 이하일 때 disable
+      // disable: function () {
+      //     var mobile = 768;
+      //     return window.innerWidth < mobile;
+      //   } // 768 이하일 때 disable
   });
   },[])
 
