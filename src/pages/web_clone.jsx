@@ -19,7 +19,6 @@ export default function WebClone() {
         id: 1,
         git: "https://github.com/JURAMII/socar",
         site: "https://juramii.github.io/socar/",
-        color: "#fff",
         Cclass:"cloneBtn"
       },
       {
@@ -30,7 +29,6 @@ export default function WebClone() {
         id: 2,
         git: "https://github.com/JURAMII/socar",
         site: "https://juramii.github.io/socar/",
-        color: "#fff",
         Cclass:"cloneBtn"
       },
       {
@@ -41,7 +39,6 @@ export default function WebClone() {
         id: 3,
         git: "https://github.com/JURAMII/KT-G",
         site: "https://juramii.github.io/KT-G/",
-        color: "#fff",
         Cclass:"cloneBtn"
       },
       {
@@ -52,7 +49,6 @@ export default function WebClone() {
         id: 4,
         git: "https://github.com/JURAMII/bizcar",
         site: "https://juramii.github.io/bizcar/",
-        color: "#fff",
         Cclass:"cloneBtn"
       },
     
@@ -64,7 +60,6 @@ export default function WebClone() {
       id: 5,
       git: "https://github.com/JURAMII/Dominos",
       site: "https://juramii.github.io/Dominos/",
-      color: "#fff",
       Cclass:"cloneBtn"
     },
   ];

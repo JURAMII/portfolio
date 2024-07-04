@@ -22,7 +22,6 @@ export default function Project() {
             id: 1,
             git: "https://github.com/JURAMII/Team_Period",
             site: "https://juramii.github.io/Team_Period/",
-            color: "#1a1a1a",
             Cclass: "ProBtn",
             Sclass:"PSkill"
           },
@@ -36,7 +35,6 @@ export default function Project() {
             id: 2,
             git: "https://github.com/JURAMII/portfolio",
             site: "https://juramii.github.io/portfolio/",
-            color: "#1a1a1a",
             Cclass: "ProBtn",
             Sclass:"PSkill",
           },
@@ -50,7 +48,6 @@ export default function Project() {
             id: 3,
             git: "https://github.com/JURAMII/dictionary",
             site: "https://juramii.github.io/dictionary/",
-            color: "#1a1a1a",
             Cclass: "ProBtn",
             Sclass:"PSkill"
           },
@@ -64,7 +61,6 @@ export default function Project() {
             txt: "새로운 지코바 치킨의 웹사이트를 직접 기획하여 구현하였습니다. express로 메인페이지와 서브페이지를 연결하고 mysql, multer를 사용하여 게시판을 만들었습니다. \n반응형 구현까지 완료하였습니다.\n(현재는 메인페이지만 접속이 가능합니다.)",
             git: "https://github.com/JURAMII/GCOVA",
             site: "https://juramii.github.io/GCOVA/",
-            color: "#1a1a1a",
             Cclass: "ProBtn",
             Sclass:"PSkill"
           },

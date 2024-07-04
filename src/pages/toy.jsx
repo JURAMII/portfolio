@@ -16,7 +16,6 @@ export default function Toy(){
                 id: 1,
                 git: "https://github.com/JURAMII/todo_list",
                 site: "https://juramii.github.io/todo_list/",
-                color: "#1a1a1a",
                 Cclass: "toyBtn",
                 Sclass: "TSkill"
               },
@@ -29,7 +28,6 @@ export default function Toy(){
                 id: 2,
                 git: "https://github.com/JURAMII/my_self",
                 site: "https://juramii.github.io/my_self/",
-                color: "#1a1a1a",
                 Cclass: "toyBtn",
                 Sclass: "TSkill"
               },
