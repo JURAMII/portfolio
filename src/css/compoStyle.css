@@ -201,6 +201,7 @@ nav li {
 /* toy */
 figure{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
 }
 figure img{
   width: 479px;
@@ -231,6 +232,7 @@ figure img{
 .toyBtn a{
   border: 2px solid var(--basic-black);
   position: relative;
+  z-index: 1;
 }
 .toyBtn a::after {
   position: absolute;
@@ -328,9 +330,6 @@ figure img{
 
 /* 반응형 */
 @media screen and (max-width : 1065px) {
-  figure{
-    box-shadow: none;
-  }
 
   figure img{
     width: 350px;
@@ -338,7 +337,6 @@ figure img{
   }
   .ToyCome_cont{
     width: 350px;
-    height: auto;
   }
 }
 
@@ -386,6 +384,10 @@ figure img{
     font-size: 14px;
     width: 70px;
     line-height: 30px;
+  }
+  figure{
+    background-color: var(--bg);
+    box-shadow: none;
   }
   figure img{
     width: 100%;

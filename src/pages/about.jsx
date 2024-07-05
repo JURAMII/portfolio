@@ -43,9 +43,9 @@ export default function About () {
                                 </div>
                                 <div>
                                     <p className='cont_font sp'>Cooperation</p>
-                                    <ul className='fe flex'>
-                                        <li><img src={GithubB} alt="github" title='github'/></li>
-                                        <li><img src={Notion} alt="notion" title='notion'/></li>
+                                    <ul className='fe cooper flex'>
+                                        <li><a href="https://github.com/JURAMII" target="_blank"><img src={GithubB} alt="github" title='github'/></a></li>
+                                        <li><a href="https://salt-puma-19c.notion.site/a3593c4a86bf406a80a4215bf9dd7651" target="_blank"><img src={Notion} alt="notion" title='notion'/></a></li>
                                     </ul>
                                 </div>
                             </div>

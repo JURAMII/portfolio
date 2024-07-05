@@ -39,7 +39,7 @@
     letter-spacing: -8px;
 }
 
-.sec1 h4{
+.sec1 h4 {
     font-size: 24px;
     text-align: center;
     position: relative;
@@ -140,15 +140,23 @@
     padding: 0 5px;
 }
 
-.skill img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
-}
-
 .fe {
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.fe img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: 0.35s;
+}
+
+.cooper img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .sp {
@@ -199,7 +207,7 @@
 
 .project_wrap .swpier-wrapper {
     transition-timing-function: linear;
-  }
+}
 
 .project_wrap .swiper-vertical>.swiper-pagination-bullets,
 .swiper-pagination-vertical.swiper-pagination-bullets {
@@ -306,8 +314,8 @@
 /* 반응형 */
 @media screen and (max-width : 1500px) {
     .name_wrap {
-       top: 30%; 
-       left: 7%;
+        top: 30%;
+        left: 7%;
     }
 
     .last_name {
@@ -319,7 +327,7 @@
 
 @media screen and (max-width : 1300px) {
     .name_wrap {
-       left: 5%;
+        left: 5%;
     }
 }
 
@@ -327,7 +335,8 @@
     .last_name {
         font-size: 350px;
     }
-    .sec1 h4{
+
+    .sec1 h4 {
         bottom: 200px;
     }
 }
@@ -336,7 +345,7 @@
 
     .name_wrap {
         left: 0%;
-     }
+    }
 
     .about {
         width: 100%;
@@ -397,12 +406,13 @@
 @media screen and (max-width : 1024px) {
     .name_wrap {
         left: 7%;
-     }
-  
+    }
+
     .last_name {
         font-size: 280px;
     }
-    .sec1 h4{
+
+    .sec1 h4 {
         font-size: 20px;
         bottom: 150px;
     }
@@ -412,7 +422,8 @@
     .last_name {
         font-size: 250px;
     }
-    .sec1 h4{
+
+    .sec1 h4 {
         bottom: 230px;
     }
 }
@@ -422,9 +433,9 @@
         pointer-events: auto !important;
         opacity: 1 !important;
         transform: none !important;
-      }
-      
-    .intro{
+    }
+
+    .intro {
         padding-top: 250px;
     }
 
@@ -439,7 +450,7 @@
     }
 
     .about h2 {
-       padding-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     .my {
@@ -464,12 +475,15 @@
     .edu ul {
         font-size: 16px;
     }
+
     .project_wrap {
         height: auto;
     }
+
     .project_wrap .swiper {
-       height: 600px;
+        height: 600px;
     }
+
     .project_wrap h2 {
         padding-bottom: 50px;
     }
@@ -560,6 +574,6 @@
 
     .project_wrap .swiper {
         height: 630px;
-     }
+    }
 
 }
