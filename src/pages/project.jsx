@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Mousewheel, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Project() {
 
@@ -18,7 +18,7 @@ export default function Project() {
             date: "2024.05.17 - 06.18",
             img: Night,
             people:"팀프로젝트",
-            txt: "서울의 고궁 야간개장 축제인 ‘경복궁 별빛야행’과 ‘창덕궁 달빛기행’을 소개하는 사이트입니다. 리액트 기반으로 만들었으며, Three.js를 사용하여 3D를 렌더링하였습니다. 저는 축제소개와 고객지원의 자주하는 질문 페이지를 담당하였습니다.\n반응형 구현까지 완료하였습니다.",
+            txt: "서울의 고궁 야간개장 축제인 ‘경복궁 별빛야행’과 ‘창덕궁 달빛기행’을 소개하는 사이트입니다. 리액트 기반으로 만들었으며, Three.js를 사용하여 3D를 렌더링하였습니다.\n저는 팀장을 맡고 축제소개와 고객지원의 자주하는 질문 페이지를 담당하였습니다.\n반응형 구현까지 완료하였습니다.",
             id: 1,
             git: "https://github.com/JURAMII/Team_Period",
             site: "https://juramii.github.io/Team_Period/",
@@ -72,17 +72,15 @@ export default function Project() {
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
-        // mousewheel={true}
         loop={true}
           autoplay={{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
         pagination={{
           clickable: true,
         }}
-        // modules={[Mousewheel, Pagination]}
         modules={[Autoplay, Pagination]}
 
         breakpoints={{   
