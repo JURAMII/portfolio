@@ -229,13 +229,14 @@
 }
 
 .toy_tit h2 {
+    text-align:  center;
     font-size: 48px;
     font-weight: bold;
     line-height: 1.2;
 }
 
 .toy {
-    justify-content: flex-end;
+    justify-content: center;
     gap: 3rem;
     padding-top: 50px;
 }
@@ -493,8 +494,6 @@
     }
 
     .toy_tit {
-        display: flex;
-        justify-content: center;
         padding-bottom: 50px;
     }
 
@@ -505,7 +504,6 @@
 
     .toy {
         flex-direction: column;
-        justify-content: center;
     }
 
     .clone_wrap h2 {

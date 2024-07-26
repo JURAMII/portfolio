@@ -1,7 +1,6 @@
 import ToyCom from '../components/toyCom';
 import "../css/pageStyle.css";
 import { Todo, MySelf } from '../assets/img/images';
-import { useEffect } from "react";
 
 export default function Toy(){
 
@@ -38,8 +37,7 @@ export default function Toy(){
     return(
         <section className='toy_wrap basic_section' data-aos="fade-down" data-aos-easing="ease-in-out" id='toy'>
             <div className='toy_tit'>
-            <h2>Toy</h2>
-            <h2>Project</h2>
+            <h2>Toy Project</h2>
             </div>
             <div className='toy flex'>
             {toys.map((toy,index)=><ToyCom key={index} {...toy}/>)}
