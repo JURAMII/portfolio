@@ -23,7 +23,8 @@ import Dict from './dict.png';
 import Gicova from './gicova.png';
 import Me from './me.png';
 import Todo from './todo.png';
-import MySelf from './myself.png'
+import MySelf from './myself.png';
+import Catch from './catch.png';
 
-export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me, Todo, MySelf
+export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me, Todo, MySelf, Catch
  }

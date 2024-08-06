@@ -15,7 +15,7 @@ export default function Intro() {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => html.style.overflow = 'auto', 3000);
+    setTimeout(() => html.style.overflow = 'visible', 3000);
   }, []);
 
   return (
