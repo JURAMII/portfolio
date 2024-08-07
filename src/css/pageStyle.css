@@ -209,11 +209,6 @@
     transition-timing-function: linear;
 }
 
-.project_wrap .swiper-vertical>.swiper-pagination-bullets,
-.swiper-pagination-vertical.swiper-pagination-bullets {
-    top: 20%;
-}
-
 .project_wrap .swiper-pagination-bullet-active {
     background: var(--basic-black);
 }
@@ -229,7 +224,7 @@
 }
 
 .toy_tit h2 {
-    text-align:  center;
+    text-align: center;
     font-size: 48px;
     font-weight: bold;
     line-height: 1.2;
@@ -487,6 +482,11 @@
 
     .project_wrap h2 {
         padding-bottom: 50px;
+    }
+
+    .project_wrap .swiper-vertical>.swiper-pagination-bullets,
+    .swiper-pagination-vertical.swiper-pagination-bullets {
+        top: 20%;
     }
 
     .toy_wrap {

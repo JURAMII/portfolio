@@ -5,9 +5,10 @@ import ProCom from "../components/proCom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Mousewheel } from "swiper/modules";
 
 export default function Project() {
+  
   const projects = [
     {
       title: "캐치! 수학 몬스터즈",
@@ -96,12 +97,13 @@ export default function Project() {
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay, Pagination]}
+        mousewheel={true}
         breakpoints={{
           768: {
             direction: "vertical",
           },
         }}
+        modules={[Autoplay, Pagination, Mousewheel]}
         className="mySwiper1"
       >
         {projects.map((project, index) => (
