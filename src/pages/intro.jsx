@@ -9,12 +9,7 @@ export default function Intro() {
   html.style.overflow = 'hidden'
 
   useEffect(() => {
-    setTimeout(() => {
-      nameRef.current.style.opacity = "0";
-    }, 2300);
-  }, []);
-
-  useEffect(() => {
+    setTimeout(() => nameRef.current.style.opacity = '0', 2300);
     setTimeout(() => html.style.overflow = 'visible', 3000);
   }, []);
 

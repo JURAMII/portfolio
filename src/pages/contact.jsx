@@ -1,6 +1,5 @@
 import "../css/pageStyle.css";
 import { GithubW } from "../assets/img/images"
-import { useEffect } from 'react';
 
 
 export default function Contact () {
