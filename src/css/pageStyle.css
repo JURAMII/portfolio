@@ -134,6 +134,7 @@
 
 .skill ul {
     width: 200px;
+    gap: 5px;
 }
 
 .skill li {
@@ -353,6 +354,7 @@
 
     .skill ul {
         width: 100%;
+        gap: 0;
     }
 
     .edu {

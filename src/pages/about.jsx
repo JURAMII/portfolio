@@ -1,6 +1,6 @@
 import "../css/pageStyle.css";
 import Letter from '../components/letter';
-import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Me } from '../assets/img/images';
+import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Me, Blender } from '../assets/img/images';
 
 export default function About () {
 
@@ -38,6 +38,7 @@ export default function About () {
                                     <ul className='fe flex'>
                                         <li><img src={Ps} alt="ps" title='Photoshop'/></li>
                                         <li><img src={Ai} alt="ai" title='Illustrator'/></li>
+                                        <li><img src={Blender} alt="blenter" title='Blender'/></li>
                                         <li><img src={Figma} alt="figma" title='figma'/></li>
                                     </ul>
                                 </div>

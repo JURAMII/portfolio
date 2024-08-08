@@ -25,6 +25,7 @@ import Me from './me.png';
 import Todo from './todo.png';
 import MySelf from './myself.png';
 import Catch from './catch.png';
+import Blender from './Blender.png'
 
-export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me, Todo, MySelf, Catch
+export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me, Todo, MySelf, Catch, Blender
  }
