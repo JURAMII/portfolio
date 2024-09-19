@@ -1,6 +1,6 @@
 import "../css/pageStyle.css";
 import Letter from '../components/letter';
-import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Me, Blender } from '../assets/img/images';
+import { CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Me, Blender, TS, Sass } from '../assets/img/images';
 
 export default function About () {
 
@@ -28,6 +28,8 @@ export default function About () {
                                     <li><img src={JS} alt="js" title='java script'/></li>
                                     <li><img src={Jquery} alt="jquery" title='jQuery'/></li>
                                     <li><img src={React} alt="react" title='react'/></li>
+                                    <li><img src={TS} alt="ts" title='typeScript'/></li>
+                                    <li><img src={Sass} alt="scss" title='scss'/></li>
                                     <li><img src={Three} alt="three" title='Three.js'/></li>
                                     <li><img src={Node} alt="node" title='node.js'/></li>
                                     <li><img src={Mysql} alt="mysql" title='mysql'/></li>

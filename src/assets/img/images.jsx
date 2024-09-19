@@ -25,7 +25,10 @@ import Me from './me.png';
 import Todo from './todo.png';
 import MySelf from './myself.png';
 import Catch from './catch.png';
-import Blender from './Blender.png'
+import Blender from './Blender.png';
+import Weather from './weather.png';
+import TS from './TypeScript.png';
+import Sass from './Sass.png';
 
-export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me, Todo, MySelf, Catch, Blender
+export { GithubW, CSS, GithubB, HTML, Jquery, JS, Mysql, Node, Notion, React, Three, Ps, Ai, Figma, Domino, Bizcar, Gongju, Kt, Socar, Night, Port, Gicova, Dict, Me, Todo, MySelf, Catch, Blender, Weather, TS, Sass
  }
